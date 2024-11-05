@@ -8,7 +8,7 @@ also included is a client.jar client for use with the server.
   
 *make sure that you have a sub-directory named "Files" in the same directory that you run the server.jar file from.
 
-**to run the client use the following command:** ./Tftpclient server-ip port
+**to run the client use the following command:** ./tftp_client server-ip port
 *default port is 7777
   
 Enjoy.

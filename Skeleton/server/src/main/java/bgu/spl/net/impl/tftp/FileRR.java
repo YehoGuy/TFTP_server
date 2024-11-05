@@ -53,7 +53,8 @@ public class FileRR {
                 finalArrSize+=file.getFileName().toString().getBytes(StandardCharsets.UTF_8).length + 1; //+1 for the delimiting zero
                 files.add(file.getFileName().toString().getBytes(StandardCharsets.UTF_8));
             }
-            finalArrSize-=1; // -1 because no delimiter for last filename
+            if(finalArrSize != 0)
+                finalArrSize-=1; // -1 because no delimiter for last filename
             byte[] finalDataArr = new byte[finalArrSize]; 
             int finalDataArrIndex = 0;
             for(byte[] file : files){
